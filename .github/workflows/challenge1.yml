@@ -1,0 +1,15 @@
+name: tutorial2
+on: workflow_dispatch
+
+jobs:
+    job1:
+        name: job1
+        runs-on: ubuntu-latest
+        steps:
+        - name: Date
+          run: date
+        - name: Working directory
+          run: pwd
+        - name: Content of Directory
+          run: ls -la
+          
