@@ -6,10 +6,15 @@ jobs:
         name: job1
         runs-on: ubuntu-latest
         steps:
-        - name: Date
-          run: date
-        - name: Working directory
-          run: pwd
-        - name: Content of Directory
-          run: ls -la
+        - name: setup
+          run: |
+            echo "Current date:"
+            date
           
+            echo "Working directory:"
+            pwd
+          
+            echo "Directory contents:"
+            ls -la
+
+
